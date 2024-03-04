@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="encabezado"> 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="./../index.html"><img src="./../img/logo-grande.png" alt="logo"></a>
             <button class="navbar-toggler menu-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,43 +45,39 @@
     </header>
     <main class="container-fluid">
         <img src="./../img/contacto.jpeg" alt="imagen portada" class="imagen-portada">
-        <h1 class="index">Farmacia Sacks</h1>
-        <h2 class="contacto">Hipolito Irogoyen 495 (esquina 25 de mayo)</h2>
-        <h2 class="contacto">Maria Grande (Entre Rios), ARGENTINA</h2>
-        <h2 class="contacto">Telefono</h2>
-        <h2 class="contacto">(0343)4940120</h2>
-        <h2 class="contacto">Horarios</h2>
-        <p class="parrafos">Lunes: 8:00 a 12:30 y 16:30 a 20:00</p>
-        <p class="parrafos">Martes: 8:00 a 12:30 y 16:30 a 20:00</p>
-        <p class="parrafos">Miércoles: 8:00 a 12:30 y 16:30 a 20:00</p>
-        <p class="parrafos">Jueves: 8:00 a 12:30 y 16:30 a 20:00</p>
-        <p class="parrafos">Viernes: 8:00 a 12:30 y 16:30 a 20:00</p>
-        <p class="parrafos">Sábado: 8:00 a 12:30</p> 
-
-        <form action="">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" placeholder="Nombre" id="nombre">
-            </div>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" placeholder="Email" id="email">
-            </div>
-            <div>
-                <label for="tel">Número de telefono:</label>
-                <input type="tel" placeholder="Telefono" id="tel">
-            </div>
-            <div>
-                <label for="direccion">Dirección:</label>
-                <input type="text" placeholder="Calle y número" id="direccion">
-            </div>
-            <div>
-                <label for="date">Fecha de naciomiento</label>
-                <input type="date" placeholder="seleccione una fecha" id="date">
-            </div>
+        <section class="row">
+            <img class="col-sm-12 col-md-6 col-lg-4" src="./../img/contacto-foto-1.jpg" alt="foto informativa">
+            <img src="./../img/horarios.jpg" alt="imagen contacto horarios" class="col-sm-12 col-md-6 col-lg-4">
+            <iframe class="col-sm-12 col-md-6 col-lg-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3395.820393920586!2d-59.904242325104796!3d-31.666133208367775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b4751874a89be5%3A0x34e3f021bce6941a!2sFarmacia%20Sacks!5e0!3m2!1ses-419!2sar!4v1709323241292!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <h1 class="contacto">CONTACTANOS</h1>
+        <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre:</label>
+            <input type="text" placeholder="Nombre" id="nombre">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" placeholder="Email" id="email">
+        </div>
+        <div class="mb-3">
+            <label for="tel" class="form-label">Número de telefono:</label>
+            <input type="tel" placeholder="Telefono" id="tel">
+        </div>
+        <div class="mb-3">
+            <label for="direccion" class="form-label">Dirección:</label>
+            <input type="text" placeholder="Calle y número" id="direccion">
+        </div>
+        <div class="mb-3">
+            <label for="date" class="form-label">Fecha de naciomiento</label>
+            <input type="date" placeholder="seleccione una fecha" id="date">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Consultas</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu consulta y/o comentario"></textarea>
+        </div>
+        <div class="mb-3">
             <input type="submit" value="Enviar">
-        </form>
-
+        </div>
     </main>
     <footer class="container-fluid">
         <a href="https://www.instagram.com/farmacia.sacks/" target="_blank"><img src="./../img/instagram-removebg-preview.png" alt="instagram" class="instagram"></a>
