@@ -9,6 +9,7 @@ html{
 }
 
 /*Header*/
+
 .menu{
     flex-grow: 0;
 }
@@ -45,9 +46,11 @@ html{
 .imagen-portada{
     width: 100%;
     object-fit: cover;
+    padding-top: 150px;
 }
 
 /*Index*/
+
 .carousel-inner div img{
     width: 100%;
     object-fit: cover;
@@ -119,6 +122,7 @@ html{
 }
 
 /*Cosmetica*/
+
 #Bagovit{
     color: rgb(31, 31, 161);
     font-size: xx-large;
@@ -198,20 +202,7 @@ html{
 }
 
 /*Perfumeria*/
-.btn{
-    height: 40px;
-    width: 70px;
-}
-.dropdown{
-    padding: 20px;
-    height: 70px;
-}
-.dropdown-menu{
-    color: rgb(34, 33, 33);
-    font-size: 20px;
-    font-weight: normal;
-    font-family: "Raleway", sans-serif;
-}
+
 #perfumes-de-mujer{
     color: rgb(31, 31, 161);
     font-size: xx-large;
@@ -234,6 +225,22 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 /*Cosmetica y perfumeria*/
+
+.btn{
+    height: 40px;
+    width: 70px;
+}
+.dropdown{
+    padding: 20px;
+    height: 70px;
+}
+.dropdown-menu{
+    color: rgb(34, 33, 33);
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "Raleway", sans-serif;
+}
+
 .categorias :hover{
     color: rgb(31, 31, 161);
     text-decoration: underline;
@@ -282,13 +289,14 @@ img{
 .info-producto a{
     border: none;
     background: none;
-    background-color: rgb(31, 31, 161);
+    background-color: #1f1fa1;
     color: #f4f4f5;
     padding: 15px 10px;
     cursor: pointer;
 }
 
 /*Obras sociales*/
+
 .col-sm-12{
     font-weight: normal;
     color: rgb(141, 133, 133);
@@ -299,7 +307,7 @@ img{
 }
 .col-md-6 {
     font-weight: normal;
-    color: rgb(141, 133, 133);
+    color: #8d8585;
     font-size: 20px;
     font-weight: 600px;
     font-family: 'Poppins', sans-serif;
@@ -307,7 +315,6 @@ img{
 }
 .col-lg-4{
     font-weight: normal;
-    color: rgb(141, 133, 133);
     font-size: 20px;
     font-weight: 700px;
     font-family: 'Poppins', sans-serif;
@@ -315,13 +322,50 @@ img{
 }
 
 /*Contacto*/
+
+.col-sm-12{
+    object-fit: cover;
+    padding: 30px 30px 0px 20px;
+}
+.col-md-6{
+    object-fit: cover;
+    padding: 30px 30px 0px 20px;
+}
+.col-lg-4{
+    object-fit: cover;
+    padding: 30px 30px 0px 20px;
+}
 .contacto{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: darkslategrey;
+    color: #1f1fa1;
+    font-size: xx-large;
+    font-weight: normal;
+    padding: 30px 0px 10px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.form-label{
+    color: #1f1fa1;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    font-weight: normal;
+    font-size: 20px;
+    font-weight: 700px;
+    font-family: 'Poppins', sans-serif;
+}
+.mb-3{
+    font-weight: normal;
+    color: rgb(141, 133, 133);
+    font-size: 20px;
+    font-weight: 700px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 30px 0px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Footer*/
+
 footer{
     background-color: rgb(236, 232, 232);
 }
@@ -334,10 +378,14 @@ footer{
     width: 50px;
 }
 
-
 /*Media querys tablet.*/
-@media screen and (max-width: 1024px) {
 
+@media screen and (max-width: 1024px) {
+    /*Inicio*/
+    .imagen-remedio{
+        height: 80%;
+        width: 45%;
+    }
     /*Cosmetica y perfumeria*/
     .contenedor{
         grid-template-columns: repeat(2, 1fr);
@@ -346,23 +394,29 @@ footer{
         object-fit: cover;
     }
 }
+
 /*Media querys mobile.*/
+
 @media screen and (max-width: 768px) {
     /*Inicio*/
+    .inicio{
+        flex-direction: column;
+    }
     .imagen-remedio{
         width: 75%;
         height: 60%;
-        align-items: center;
+        flex-direction: column;
     }
     .farmacia{
-        display: block;
+        text-align: center;
     }
     .sobre-nosotros{
-        display: block;
+        text-align: center;
     }
     .parrafos{
-        display: block;
+        text-align: center;
     }
+
     /*Cosmetica y perfumeria*/
     .contenedor{
         grid-template-columns: repeat(1, 1fr);
