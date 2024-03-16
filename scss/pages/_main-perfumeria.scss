@@ -1,0 +1,11 @@
+/*Main perfumeria*/
+.main-perfumeria{
+    .marcas{
+        @include marcas ($color-repetido, xx-large, normal, 30px 0px 20px 20px, $fuente-principal);
+        // color: $color-repetido;
+        // font-size: xx-large;
+        // font-weight: normal;
+        // padding: 30px 0px 20px 20px;
+        // font-family: $fuente-principal;
+    }
+}

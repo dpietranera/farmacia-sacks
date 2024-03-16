@@ -1,0 +1,11 @@
+/*Estilos globales*/
+html{
+    font-size: 62.5%; } /*Convierte un rem a 10px*/ 
+.imagen-portada{
+    width: 100%;
+    object-fit: cover;
+    padding-top: 151px;
+} 
+img{
+        max-width: 100%;
+}

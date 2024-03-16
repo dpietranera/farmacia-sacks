@@ -1,0 +1,32 @@
+//Variables
+@import "utilities/variables";
+//Mixin
+@import "utilities/mixin";
+//Extend
+@import "utilities/extend";
+//Reset
+@import "utilities/reset";
+//Estilos globales
+@import "utilities/globals";
+
+//Header
+@import "components/header";
+
+//Main Index
+@import "pages/main-index";
+//Main Cosmetica
+@import "pages/main-cosmetica";
+//Main perfumeria
+@import "pages/main-perfumeria";
+//Main cosmetica y perfumeria (mismos estilos)
+@import "pages/main-cosme-y-perfu";
+//Main Obras sociales
+@import "pages/main-obras-sociales";
+//Main contacto
+@import "pages/main-contacto";
+
+//Footer
+@import "components/footer";
+
+//Media querys
+@import "utilities/media-querys";

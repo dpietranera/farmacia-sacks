@@ -1,0 +1,335 @@
+.main-index .accordion .accordion-body, .main-index .accordion .accordion-item .accordion-button {
+  font-weight: normal;
+  color: rgb(34, 33, 33);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*reset*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*Estilos globales*/
+html {
+  font-size: 62.5%;
+} /*Convierte un rem a 10px*/
+.imagen-portada {
+  width: 100%;
+  object-fit: cover;
+  padding-top: 151px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Header*/
+header .menu {
+  flex-grow: 0;
+}
+header .menu .menu-ul {
+  column-gap: 10px;
+  align-items: center;
+}
+header .menu ul li a {
+  color: rgb(77, 75, 75);
+  font-weight: normal;
+  text-transform: capitalize;
+  font-size: large;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  margin: right 20px;
+  padding-right: 20px;
+}
+header .menu ul li a:hover {
+  color: #1f1fa1;
+  text-decoration: underline;
+}
+header .menu-button {
+  border: none;
+}
+header .menu-button:focus {
+  box-shadow: none;
+}
+header .menu-button .menu-icon {
+  background-image: url(./../img/hamburguer-menu.svg);
+}
+
+/*Main Index*/
+.main-index .carousel-inner div img {
+  width: 100%;
+  object-fit: cover;
+  height: 700px;
+}
+.main-index .inicio {
+  display: flex;
+}
+.main-index .inicio .imagen-remedio {
+  border-radius: 50%;
+  width: 23%;
+  height: 17%;
+  margin: 40px;
+  object-fit: cover;
+}
+.main-index .inicio .imagen-remedio:hover img{
+  transform: rotate(-20deg);
+}
+.main-index .inicio .inicio-hijo {
+  display: flex;
+  flex-direction: column;
+}
+.main-index .inicio .inicio-hijo .farmacia {
+  color: #1f1fa1;
+  font-size: large;
+  font-weight: inherit;
+  padding: 40px 0px 10px 20px;
+  font-family: "Raleway", sans-serif;
+}
+.main-index .inicio .inicio-hijo .sobre-nosotros {
+  color: #4d4b4b;
+  font-size: xx-large;
+  font-weight: normal;
+  padding: 10px 0px 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+.main-index .inicio .inicio-hijo .parrafos {
+  font-weight: normal;
+  color: #8d8585;
+  font-size: 20px;
+  font-weight: 700px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 30px 0px 20px;
+}
+.main-index .servicio-farmacia {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+.main-index .accordion .preguntas-frecuentes {
+  color: #1f1fa1;
+  font-size: large;
+  font-weight: inherit;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+}
+/*Main Cosmetica*/
+.main-cosmetica .marcas {
+  color: #1f1fa1;
+  font-size: xx-large;
+  font-weight: normal;
+  padding: 30px 0px 20px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Main perfumeria*/
+.main-perfumeria .marcas {
+  color: #1f1fa1;
+  font-size: xx-large;
+  font-weight: normal;
+  padding: 30px 0px 20px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Main cosmetica y perfumeria (mismos estilos)*/
+.dropdown {
+  padding: 20px;
+  height: 70px;
+}
+.dropdown .btn {
+  height: 40px;
+  width: 70px;
+}
+.dropdown .dropdown-menu {
+  color: rgb(34, 33, 33);
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Raleway", sans-serif;
+}
+
+.categorias:hover {
+  color: #1f1fa1;
+  text-decoration: underline;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.contenedor .producto {
+  border-radius: 10px;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.contenedor .producto img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+.contenedor .producto:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.contenedor .producto figure {
+  overflow: hidden;
+}
+.contenedor .producto:hover img {
+  transform: scale(1.05);
+}
+.contenedor .producto .info-producto {
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contenedor .producto .info-producto a {
+  border: none;
+  background: none;
+  background-color: #1f1fa1;
+  color: #f4f4f5;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+.contenedor .producto .precio {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/*Main Obras sociales*/
+.main-obras .columnas {
+  font-weight: normal;
+  color: #8d8585;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 30px 0px 20px;
+}
+.main-obras .col-sm-12 {
+  font-weight: 500px;
+}
+.main-obras .col-md-6 {
+  font-weight: 600px;
+}
+.main-obras .col-lg-4 {
+  font-weight: 700px;
+}
+
+/*Main contacto*/
+.main-contacto .column {
+  object-fit: cover;
+  padding: 30px 30px 0 20px;
+}
+.main-contacto .contacto {
+  color: #1f1fa1;
+  font-size: xx-large;
+  font-weight: normal;
+  padding: 30px 0px 10px 20px;
+  font-family: "Poppins", sans-serif;
+}
+.main-contacto .mb-3 {
+  font-weight: normal;
+  color: #8d8585;
+  font-size: 20px;
+  font-weight: 700px;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 30px 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.main-contacto .mb-3 .form-label {
+  color: #1f1fa1;
+  display: flex;
+  flex-direction: column;
+}
+.main-contacto .mb-3 .form-control {
+  font-weight: normal;
+  font-size: 20px;
+  font-weight: 700px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Footer*/
+footer {
+  background-color: rgb(236, 232, 232);
+}
+footer .pie-pagina{
+  color: #D9D9D9;
+  font-family:"'Poppins', sans-serif";
+  background-color:  rgb(236, 232, 232);
+  text-align: center;
+}
+footer .pie-pagina .iconos{
+  align-items: center;
+}
+footer .pie-pagina .iconos .insta{
+  object-fit: cover;
+  width: 65px;
+  height: 65px;
+}
+footer .pie-pagina .iconos .face{
+  width: 60px;
+  height: 60px;
+}
+footer .pie-pagina .iconos .whatsapp{
+  width: 50px;
+  height: 50px;
+}
+footer .pie-pagina .flex-footer {
+  display: flex;
+  justify-content: space-around;
+  font-size: large;
+  font-family: "Poppins', sans-serif";
+  color:#1f1fa1;
+} 
+
+/*Media querys*/
+/*Media querys mobile*/
+@media screen and (max-width: 1024px) {
+  /*Cosmetica y perfumeria*/
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contenedor .producto {
+    object-fit: cover;
+  }
+}
+/*Media querys mobile.*/
+@media screen and (max-width: 768px) {
+  .main-index .inicio {
+    flex-direction: column;
+  }
+  .main-index .inicio .imagen-remedio {
+    width: 70%;
+    height: 55%;
+    flex-direction: column;
+    margin-left: 15%;
+  }
+  .main-index .inicio .inicio-hijo .farmacia {
+    text-align: center;
+  }
+  .main-index .inicio .inicio-hijo .sobre-nosotros {
+    text-align: center;
+  }
+  .main-index .inicio .inicio-hijo .parrafos {
+    text-align: center;
+  }
+  /*Cosmetica y perfumeria*/
+  .contenedor {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .contenedor .producto {
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

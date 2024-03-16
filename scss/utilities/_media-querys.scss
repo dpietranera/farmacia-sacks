@@ -1,0 +1,45 @@
+/*Media querys*/
+/*Media querys mobile*/
+@media screen and (max-width: 1024px) {
+    /*Cosmetica y perfumeria*/
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+        .producto{
+            object-fit: cover;
+        }
+    }
+}
+
+/*Media querys mobile.*/
+@media screen and (max-width: 768px) {
+    .main-index{
+        .inicio{
+            flex-direction: column;
+            .imagen-remedio{
+                width: 70%;
+                height: 55%;
+                flex-direction: column;
+                margin-left: 15%;
+            }
+            .inicio-hijo{
+                .farmacia{
+                    text-align: center;
+                }
+                .sobre-nosotros{
+                    text-align: center;
+                }
+                .parrafos{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    /*Cosmetica y perfumeria*/
+    .contenedor{
+        grid-template-columns: repeat(1, 1fr);
+        .producto{
+            object-fit: cover;
+        }
+    }
+}
+

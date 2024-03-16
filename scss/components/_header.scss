@@ -1,0 +1,33 @@
+/*Header*/
+header{
+    .menu{
+        flex-grow: 0;
+        .menu-ul{
+        column-gap: 10px;
+        align-items: center;
+        }
+    ul li a{
+        color: rgb(77, 75, 75);
+        font-weight: normal;
+        text-transform: capitalize;
+        font-size: large;
+        font-family: "Raleway", sans-serif;
+        text-decoration: none;
+        margin: right 20px;
+        padding-right: 20px;
+        &:hover{
+        color: rgb(31, 31, 161);
+        text-decoration: underline;
+        }
+    }
+    }
+    .menu-button{
+        border: none;
+        &:focus{
+        box-shadow: none;
+        }
+        .menu-icon{
+        background-image: url(./../img/hamburguer-menu.svg);
+        }
+    }
+}
