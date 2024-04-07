@@ -4,6 +4,8 @@
   font-size: 15px;
   font-family: "Poppins", sans-serif;
 }
+/*ACLARACIÓN RELACIONADO AL HTML-FOOTER: 
+El número de whatsapp es de mentira y el enlace te lleva a whatsapp web ya que no tengo whatsapp bussines para agregar un link directo al que te lleva para mandar mensajes */
 
 /*reset*/
 * {
@@ -54,11 +56,13 @@ header .menu-button {
 header .menu-button:focus {
   box-shadow: none;
 }
+/*Foto menú hamburguesa*/
 header .menu-button .menu-icon {
   background-image: url(./../img/hamburguer-menu.svg);
 }
 
 /*Main Index*/
+/*Carrusel*/
 .main-index .carousel-inner div img {
   width: 100%;
   object-fit: cover;
@@ -67,6 +71,7 @@ header .menu-button .menu-icon {
 .main-index .inicio {
   display: flex;
 }
+/*seccion*/
 .main-index .inicio .imagen-remedio {
   border-radius: 50%;
   width: 23%;
@@ -112,6 +117,7 @@ header .menu-button .menu-icon {
   object-fit: cover;
   margin-bottom: 30px;
 }
+/*Parte accordeon inicio*/
 .main-index .accordion .preguntas-frecuentes {
   color: #1f1fa1;
   font-size: large;
@@ -152,12 +158,10 @@ header .menu-button .menu-icon {
   font-weight: normal;
   font-family: "Raleway", sans-serif;
 }
-
 .categorias:hover {
   color: #1f1fa1;
   text-decoration: underline;
 }
-
 .contenedor {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
